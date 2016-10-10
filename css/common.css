@@ -1,0 +1,238 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*--------------------------------------
+　基本設定
+---------------------------------------*/
+body {
+	color:#666;
+	line-height:2em;
+	font-size:75%;
+	font-family: "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic Pro W3", "ヒラギノ角ゴ Pro W3", Osaka, Verdana, "ＭＳ Ｐゴシック", "MS P Gothic", Geneva, arial, helvetica, clean, sans-serif;
+}
+input {
+	font-family:Arial,Helvetica,sans-serif;
+	padding:2px;
+	vertical-align:middle;
+}
+.clearfix {
+	overflow:hidden;
+}
+
+/*--------------------------------------
+　大枠囲み
+---------------------------------------*/
+#header,#contents {
+	width:940px;
+	margin:0 auto 0 auto;
+}
+#header {
+	height:70px;
+}
+#mainVisual {
+	border-bottom:1px solid #efeeee;
+	margin-bottom:25px;
+}
+#mainVisual .inner {
+	width:940px;
+	margin:0 auto 0 auto;
+}
+#contents {
+	margin-bottom:80px;
+}
+#main {
+	float:left;
+	width:680px;
+}
+#sub {
+	float:right;
+	width:240px;
+}
+#footer {
+	font-size:80%;
+	height:90px;
+	background:url(../images/common/bg_footer.gif);
+}
+
+/*--------------------------------------
+　ヘッダー
+---------------------------------------*/
+h1 {
+	float:left;
+	font-size:27px;
+	font-weight:bold;
+	font-style:italic;
+	color:#2e436b;
+	margin-top:22px;
+}
+h1 a:link,h1 a:visited,h1 a:hover {
+	color:#2e436b;
+	text-decoration:none;
+}
+
+/*--------------------------------------
+　グローバルナビゲーション
+---------------------------------------*/
+#globalNavi {
+	background:url(../images/common/bg_gnavi.gif) repeat-x left top;
+	color:#FFF;
+}
+#globalNavi ul {
+	width:940px;
+	margin:0 auto 0 auto;
+	background:url(../images/common/bg_gnavi_line.gif) no-repeat left center;
+}
+#globalNavi ul li a {
+	float:left;
+	width:188px;
+	text-align:center;
+	line-height:1.3em;
+	letter-spacing:0.2em;
+	padding-top:10px;
+	height:37px;
+	font-size:12px;
+	background:url(../images/common/bg_gnavi_line.gif) no-repeat right center;
+	text-decoration:none;
+	color:#FFF;
+}
+#globalNavi ul li a:hover {
+	color:#FFF;
+	text-decoration:none;
+	background:url(../images/common/bg_gnavi_on.gif) repeat-x left top;
+}
+#globalNavi span {
+	font-size:8px;
+}
+
+/*--------------------------------------
+　メインコンテンツ
+---------------------------------------*/
+/*共通*/
+.desc h2 {
+	font-size:120%;
+	background:url(../images/top/bg_h2.gif) left top;
+	color:#FFF;
+	padding:5px 0 5px 20px;
+	margin-bottom:15px;
+}
+.desc h2 span {
+	background:url(../images/top/bg_h2_arrow.gif) no-repeat left center;
+	padding-left:15px;
+}
+.desc,.service {
+	margin-bottom:40px;
+}
+.topics h2 ,.service h2 {
+	background:url(../images/common/bg_h2.gif) repeat-x left bottom;
+	margin-bottom:15px;
+	color:#444;
+	font-size:110%;
+	border-top:1px solid #6f7d96;
+	border-bottom:1px dotted #CCC;
+	padding:5px 0 5px 10px;
+	font-weight:bold;
+	letter-spacing:0.1em;
+}
+.topics h2 span,.service h2 span {
+	color:#2E436B;
+	font-size:85%;
+	padding-left:20px;
+	font-weight:normal;
+}
+
+/*サービス*/
+.service ul {
+	margin-right:-20px;
+}
+.service ul li {
+	float:left;
+	width:330px;
+	margin-right:20px;
+}
+.service ul li img {
+	margin-bottom:10px;
+}
+.service h3 {
+	font-weight:bold;
+	color:#3e547c;
+	margin-bottom:5px;
+	font-size:110%;
+	letter-spacing:0.1em;
+}
+.service .s1 h3 {
+	background:url(../images/top/icon_planes.gif) no-repeat left center;
+	padding-left:25px;
+}
+.service .s2 h3 {
+	background:url(../images/top/icon_earth.gif) no-repeat left center;
+	padding-left:25px;
+}
+
+/*お知らせ*/
+.topics dl dt {
+	float:left;
+	width:8em;
+	letter-spacing:0.1em;
+	color:#344b73;
+}
+.topics dl dd {
+	margin:0 0 10px 0;
+	padding:0 0 10px 8em;
+	border-bottom:1px dotted #CCC;
+}
+
+/*--------------------------------------
+　サブコンテンツ
+---------------------------------------*/
+/*お問い合わせボタン*/
+.btn_contact a {
+	margin-bottom:10px;
+	background:url(../images/common/btn_contact.gif) no-repeat left top;
+	width:240px;
+	height:40px;
+	color:#FFF;
+	font-weight:bold;
+	font-size:17px;
+	padding:20px 0 0 20px;
+	text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+	display:block;
+	text-decoration:none;
+}
+.btn_contact a:hover {
+	background:url(../images/common/btn_contact_on.gif) no-repeat left top;
+}
+
+/*バナー*/
+.bnr li {
+	margin-bottom:5px;
+}
+
+/*--------------------------------------
+　フッター
+---------------------------------------*/
+#footer .inr_group {
+	width:940px;
+	margin:0 auto 0 auto;
+}
+#footer .group_link {
+	margin-bottom:5px;
+}
+#footer .group_link .copy {
+	float:right;
+	letter-spacing:0.1em;
+	color:#9FB1CF;
+}
+#footer .group_link .policy {
+	float:left;
+}
+#footer .inr_group .tmp_webfac {
+	text-align:right;
+}
+#footer a:link,#footer a:visited {
+	color:#9FB1CF;
+	text-decoration:none;
+}
+#footer a:hover {
+	color:#9FB1CF;
+	text-decoration:underline;
+}

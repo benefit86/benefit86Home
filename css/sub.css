@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*--------------------------------------
+　基本設定
+---------------------------------------*/
+.section {
+	margin-bottom:50px;
+}
+#ttl_catch {
+	border-bottom:1px solid #efeeee;
+	margin-bottom:25px;
+}
+#ttl_catch h2 {
+	width:940px;
+	margin:0 auto 0 auto;
+	font-size:220%;
+	height:80px;
+	padding-top:70px;
+	color:#273C66;
+	background:url(../images/common/bg_visual.jpg) no-repeat left top;
+}
+.section h3 {
+	background:url(../images/common/bg_ttl.gif) repeat-x left top;
+	margin-bottom:25px;
+	color:#444;
+	font-size:120%;
+	padding:5px 0 5px 40px;
+	font-weight:bold;
+	letter-spacing:0.1em;
+	height:26px;
+}
+
+/*--------------------------------------
+　事業情報
+---------------------------------------*/
+.section .service_box {
+	margin-bottom:20px;
+}
+.section .service_box h4 {
+	margin-bottom:10px;
+	color:#273C66;
+	font-size:120%;
+	border-left:2px solid #273C66;
+	padding-left:10px;
+	font-weight:bold;
+	letter-spacing:0.1em;
+}
+.section .service_box .left {
+	float:left;
+	margin-right:20px;
+}
+.section .service_box .right {
+	float:right;
+	margin-left:20px;
+}
+
+/*--------------------------------------
+　プライバシーポリシー
+---------------------------------------*/
+.privacy.section h4 {
+	margin:30px 0 20px 0;
+	color:#273C66;
+	font-size:120%;
+	border-left:2px solid #273C66;
+	padding-left:10px;
+	font-weight:bold;
+	letter-spacing:0.1em;
+}
+.privacy.section p {
+	margin-bottom:10px;
+}
+
+/*--------------------------------------
+　その他
+---------------------------------------*/
+/*テーブル*/
+.table_01 {
+	margin-bottom:20px;
+}
+.table_01 th,.table_01 td {
+	border-bottom:1px dotted #dfdfdf;
+	padding:13px 15px 13px 15px;
+}
+.table_01 th {
+	font-weight:bold;
+	color:#30466F;
+}
+
+/*全角・半角*/
+.zenkaku {
+	ime-mode: active;
+	border:1px solid #dfdfdf;
+    border-radius: 2px;        /* CSS3草案 */  
+    -webkit-border-radius: 2px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 2px;   /* Firefox用 */ 
+}
+.hankaku {
+	ime-mode: inactive;
+	border:1px solid #dfdfdf;
+    border-radius: 2px;        /* CSS3草案 */  
+    -webkit-border-radius: 2px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 2px;   /* Firefox用 */ 
+}
+
+/*その他*/
+.align_center {
+	text-align:center;
+}
+.mt20 {
+	margin-top:20px;
+}
+
+/*リスト*/
+.normal_list {
+	padding-left:15px;
+}
+.normal_list li {
+	list-style:disc;
+}

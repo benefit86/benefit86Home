@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>一信株式会社-お問い合わせ</title>
+<meta name="keywords" content="キーワード" />
+<meta name="description" content="サイトの説明" />
+<link href="css/import.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/import.js"></script>
+</head>
+<body>
+<!--ヘッダー-->
+<div id="header" class="clearfix">
+  <h1><a href="index.html">一信株式会社</a></h1>
+</div>
+<!--ヘッダー終了-->
+<!--グローバルナビゲーション-->
+<div id="globalNavi">
+  <ul class="clearfix">
+    <li><a href="index.html">トップページ<br>
+      <span>TOP</span></a></li>
+    <li><a href="service.html">商品情報<br>
+      <span>PRODUCT</span></a></li>
+    <li><a href="company.html">会社概要<br>
+      <span>COMPANY</span></a></li>
+    <li><a href="recruit.html">採用情報<br>
+      <span>RECRUIT</span></a></li>
+    <li><a href="contact.html">お問い合わせ<br>
+      <span>CONTACT</span></a></li>
+  </ul>
+</div>
+<!--グローバルナビゲーション終了-->
+<!--ビジュアル-->
+<div id="ttl_catch">
+  <h2>お問い合わせ</h2>
+</div>
+<!--ビジュアル終了-->
+<!--コンテンツ-->
+<div id="contents" class="clearfix">
+  <!--メイン-->
+  <div id="main">
+    <div class="section">
+      <h3>お問い合わせ</h3>
+      <form action="cgi-bin/inquiry.cgi" method="post">
+        <input name="kakunin" type="hidden" value="1">
+        <input name="hensin" type="hidden" value="1">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_01">
+          <colgroup>
+          <col width="25%">
+          <col width="75%">
+          </colgroup>
+          <tr>
+            <th>
+              <label for="name1">お名前</label>
+              ※ </th>
+            <td>
+              <input name="name1" type="text" class="zenkaku" id="name1" size="25">
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="kana">ふりがな</label>
+              ※ </th>
+            <td>
+              <input name="kana" type="text" class="zenkaku" id="kana" size="25">
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="company">会社名</label>
+            </th>
+            <td>
+              <input name="company" type="text" class="zenkaku" id="company" size="30">
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="mail">メールアドレス</label>
+              ※ </th>
+            <td>
+              <input name="mail" type="text" class="hankaku" id="mail" size="40">
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="situmon">お問い合わせ内容</label>
+              ※</th>
+            <td>
+              <textarea name="situmon" cols="50" rows="7" class="zenkaku" id="situmon"></textarea>
+            </td>
+          </tr>
+        </table>
+        <p class="align_center">
+          <input name="" type="submit" value="入力内容を確認する">
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--メイン終了-->
+  <!--サブ-->
+  <div id="sub">
+    <div class="btn_contact"><a href="contact.html">お問い合わせ</a></div>
+    <ul class="bnr">
+      <li><img src="images/common/bnr_twitter.gif" alt="Twitterアカウント"></li>
+      <li><img src="images/common/bnr_facebook.gif" alt="facebookページ"></li>
+    </ul>
+  </div>
+  <!--サブ終了-->
+</div>
+<!--コンテンツ終了-->
+<!--フッター-->
+<div id="footer">
+  <div class="inr_group">
+    <div class="group_link clearfix">
+      <p class="policy"><a href="privacy.html">プライバシーポリシー</a></p>
+      <p class="copy">COPYRIGHT &copy; 2016 一信株式会社 ALL RIGHTS RESERVED.</p>
+    </div>
+  </div>
+</div>
+<!--フッター終了-->
+<script type="text/javascript">
+	var validation = $("form")
+		.exValidation({
+			rules: {
+				name1: "chkrequired chkzenkaku",
+				kana: "chkrequired chkhiragana",
+				mail: "chkrequired chkemail chkhankaku",
+				situmon: "chkrequired",
+			},
+			errInsertPos: 'after',
+			errPosition: 'fixed'
+		});
+	var selectable = $('#pref').selectable({
+		callback: function() {
+			validation.laterCall('#pref');
+		}
+	});		
+</script>
+</body>
+</html>
